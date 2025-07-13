@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rahman’s Burger</title>
+ <!-- 🍔 Fun Burger Fact Section (Clean & Simple) -->
+<div id="burger-fact-box">
+  <h3>🍔 Did You Know?</h3>
+  <p><em>Enter a burger topic to get a fun fact (try: cheese, grill, history):</em></p>
+  <input type="text" id="burger-topic" placeholder="e.g., cheese" />
+  <button id="burger-btn">Tell Me!</button>
+  <p id="burger-result"></p>
+</div>
+
+
+  <style>
+  /* 🍔 Relocated Fun Fact Styling */
+  #burger-fact-section {
+    background-color: #fff8e1;
+    border-top: 3px solid #d35400;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  #burger-fact-section h2 {
+    color: #d35400;
+    font-size: 1.6rem;
+  }
+
+  #burger-topic {
+    padding: 10px;
+    width: 220px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  #burger-btn {
+    background-color: #d35400;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #burger-result {
+    margin-top: 15px;
+    font-style: italic;
+    color: #444;
+  }
+  #burger-fact-box {
+  background-color: #fff3e0;
+  padding: 20px;
+  margin: 50px auto 20px auto;
+  max-width: 600px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-top: 2px solid #e67e22;
+}
+
+#burger-fact-box h3 {
+  margin-bottom: 10px;
+  color: #d35400;
+}
+
+#burger-topic {
+  padding: 8px;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#burger-btn {
+  padding: 8px 12px;
+  background-color: #d35400;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+#burger-result {
+  margin-top: 15px;
+  font-style: italic;
+  color: #333;
+}
+
+</style>
+
+  <style>
+  #burger-fact-box {
+  background: linear-gradient(135deg, #ffcc70, #ffa94d, #ff704d);
+  color: #fff;
+  padding: 20px;
+  margin: 50px auto 20px auto;
+  max-width: 600px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Overlay Background */
+#popup-box {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Popup Content Box */
+#popup-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<!-- Trigger Button -->
+<button id="popup-btn">Open Popup</button>
+
+<!-- Popup Box -->
+<div id="popup-box">
+  <div id="popup-content">
+    <p>Welcome to our burger shop!</p>
+    <button id="popup-close">Close</button>
+  </div>
+</div>
+
+  </div>
+
+
+<!-- JavaScript to close the popup -->
+<script>
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
+
+	</div>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Rahman's Burger </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Rahman's Burger
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="book.html">Book Table</a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <a href="" class="user_link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              <a class="cart_link" href="#">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                   c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                   C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                   c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                   C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                   c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                    </g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                </svg>
+              </a>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+              <a href="" class="order_online">
+                Order Online
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Fast Food Restaurant
+                    </h1>
+                    <p>
+                      Nestled in the heart of the city, Rahman's Burger is a flavor-packed haven where comfort food meets culinary flair. Known for its juicy, smash-grilled patties and bold, handcrafted sauces, this spot serves up burgers that are both nostalgic and adventurous. Whether you’re diving into the spicy “Rahman’s Revenge” or savoring the delicate crunch of the tempura veggie option, every bite tells a story of passion and perfection. With cozy seating, upbeat music, and a warm team that greets you like family, Rahman’s Burger has quickly become the go-to spot for locals seeking big flavor and good vibes. It's not just a burger—it’s a moment you’ll want to taste again.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Order Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Fast Food Restaurant
+                    </h1>
+                    <p>
+                    Beyond the mouthwatering menu, Rahman’s Burger is a space where community thrives. With walls adorned in vibrant local art and tabletops that invite spontaneous conversations, it’s more than just a place to grab a bite—it’s where friends gather, stories are shared, and new connections spark over baskets of golden fries and milkshakes that taste like nostalgia. The atmosphere effortlessly blends laid-back comfort with a dash of urban edge, making it ideal for solo thinkers and boisterous groups alike.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Order Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Fast Food Restaurant
+                    </h1>
+                    <p>
+                      What truly sets Rahman's Burger apart is its unwavering commitment to quality and authenticity. Ingredients are locally sourced, patties are made fresh daily, and the recipes reflect a perfect balance of tradition and bold innovation. The shop isn’t chasing trends—it’s setting them. From Rahman himself greeting regulars with a smile to the monthly “Burger Lab” nights where customers help shape the next flavor sensation, it’s clear this is a place built on passion, flavor, and the joy of shared experiences.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Order Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- offer section -->
+
+  <section class="offer_section layout_padding-bottom">
+    <div class="offer_container">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/o1.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Tasty Thursdays
+                </h5>
+                <h6>
+                  <span>20%</span> Off
+                </h6>
+                <a href="">
+                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                    <g>
+                      <g>
+                        <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                     c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                     C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                     c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                     C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                     c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                      </g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/o2.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pizza Days
+                </h5>
+                <h6>
+                  <span>15%</span> Off
+                </h6>
+                <a href="">
+                  Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                    <g>
+                      <g>
+                        <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                     c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                     C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                     c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                     C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                     c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                      </g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end offer section -->
+
+  <!-- food section -->
+
+  <section class="food_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Menu
+        </h2>
+      </div>
+
+      <ul class="filters_menu">
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".burger">Burger</li>
+        <li data-filter=".pizza">Pizza</li>
+        <li data-filter=".pasta">Pasta</li>
+        <li data-filter=".fries">Fries</li>
+      </ul>
+
+      <div class="filters-content">
+        <div class="row grid">
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f1.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Pepperoni Pizza
+                  </h5>
+                  <p>
+                    🔥 Pepperoni Pizza  
+Bold, crispy, and irresistibly cheesy—our pepperoni pizza hits the sweet spot with every spicy slice. Fresh dough, tangy sauce, and golden mozzarella topped with perfectly curled pepperoni. Simple. Classic. Unforgettable.
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $20
+                    </h6>
+                    <a href="">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f2.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Premium Non-Veg Burger
+                  </h5>
+                  <p>
+                     🥩 Premium Non-Veg Burger  
+A bold blend of flavor and finesse—this burger stars a juicy, flame-grilled patty made from prime cuts of meat, layered with smoky bacon, aged cheddar, and zesty house sauce. Nestled in a buttery brioche bun and finished with crisp lettuce and grilled onions, it's indulgence in every bite. Pure satisfaction, no compromises.
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $15
+                    </h6>
+                    <a href="">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f3.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Margherita Pizza
+                  </h5>
+                  <p>
+                    🍕 Margherita Pizza  
+Simple, elegant, and full of flavor—our Margherita pizza is a celebration of fresh ingredients. A thin, hand-tossed crust holds a vibrant tomato base, creamy mozzarella, and fragrant basil leaves. Lightly charred from the oven, it’s the classic Italian taste that never goes out of style.
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $17
+                    </h6>
+                    <a href="">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f4.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Vegetarian Pasta Salad 
+                  </h5>
+                  <p>
+                    🥗 Vegetarian Pasta Salad  
+A refreshing burst of flavor and color, our vegetarian pasta salad blends al dente penne with crisp bell peppers, juicy cherry tomatoes, olives, and cucumbers. Tossed in a zesty lemon-herb dressing and topped with crumbled feta and fresh basil, it’s the perfect balance of light, satisfying, and utterly delicious. Ideal for a quick lunch or a vibrant side
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $18
+                    </h6>
+                    <a href="">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f5.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    French Fries
+                  </h5>
+                  <p>
+                    🍟 French Fries  
+Crispy on the outside, fluffy on the inside—our golden French fries are hand-cut and lightly seasoned for the perfect crunch. Served hot and fresh, they’re the ultimate sidekick to any meal or a snack that steals the spotlight.
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $10
+                    </h6>
+                    <a href="">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f6.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Deluxe Pizza
+                  </h5>
+                  <p>
+                    🍕 Deluxe Pizza  
+Loaded with flavor and layered to impress, our Deluxe Pizza features a hand-tossed crust topped with savory tomato sauce, gooey mozzarella, spicy pepperoni, smoky sausage, crisp bell peppers, onions, mushrooms, and black olives. Baked to golden perfection, it’s a hearty masterpiece that satisfies every craving in one incredible slice.
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $15
+                    </h6>
+                    <a href="">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f7.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Chicken Burger
+                  </h5>
+                  <p>
+                     🍔 Chicken Burger  
+Tender, juicy, and packed with flavor—our chicken burger features a perfectly grilled or crispy fried chicken fillet, nestled in a soft brioche bun with fresh lettuce, tomatoes, and a slather of zesty mayo or smoky BBQ sauce. It’s comfort food with a crave-worthy twist.
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $12
+                    </h6>
+                    <a href="">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f8.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Boiled Chicken Burger
+                  </h5>
+                  <p>
+                    🍔 Boiled Chicken Burger  
+Light, wholesome, and full of flavor—our boiled chicken burger features tender, seasoned chicken breast, gently simmered to juicy perfection. Stacked on a soft whole wheat bun with crisp lettuce, fresh cucumber slices, and a dollop of tangy yogurt-mint sauce, it’s the perfect guilt-free bite for anyone craving something delicious yet nourishing
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $14
+                    </h6>
+                    <a href="">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/f9.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Spicy Pasta
+                  </h5>
+                  <p>
+                 🌶️ Spicy Pasta  
+Turn up the heat with our spicy pasta—al dente penne tossed in a fiery chili-tomato sauce, blended with roasted garlic, sun-dried tomatoes, and a kick of crushed red pepper. Finished with a sprinkle of parmesan and fresh parsley, it’s bold, comforting, and sure to light up your taste buds.
+                  </p>
+                  <div class="options">
+                    <h6>
+                      $10
+                    </h6>
+                    <a href="">
+                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                          </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          View More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end food section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                We Are Rahman's
+              </h2>
+            </div>
+            <p>
+              🍽️ Rahman's Fastfood — Fast, Flavorful, Unforgettable  
+Rahman’s Fastfood is where cravings meet craftsmanship. From juicy burgers and loaded fries to sizzling pizzas and spicy pastas, every dish is crafted with passion and premium ingredients. The menu offers a bold mix of classic comfort and creative twists—think creamy veggie pasta salads, crispy chicken delights, and signature items like the “Rahman’s Deluxe” pizza and the “Boiled Chicken Burger.” With quick service, cozy vibes, and flavors that linger long after the last bite, Rahman’s Fastfood isn’t just a spot to eat—it’s a destination for food lovers on the go.
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- book section -->
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Book A Table
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" class="form-control" placeholder="Your Name" />
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="Your Email" />
+              </div>
+              <div>
+                <select class="form-control nice-select wide">
+                  <option value="" disabled selected>
+                    How many persons?
+                  </option>
+                  <option value="">
+                    2
+                  </option>
+                  <option value="">
+                    3
+                  </option>
+                  <option value="">
+                    4
+                  </option>
+                  <option value="">
+                    5
+                  </option>
+                </select>
+              </div>
+              <div>
+                <input type="date" class="form-control">
+              </div>
+              <div class="btn_box">
+                <button>
+                  Book Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container ">
+            <div id="googleMap"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end book section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+          What Says Our Customers
+        </h2>
+      </div>
+      <div class="carousel-wrap row ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                  Our family has made Rahman’s our weekend ritual. The Deluxe Pizza is always a hit with the kids, and I personally love the vegetarian pasta salad—fresh, zesty, and satisfying without being heavy. The staff is super friendly and even remembers our usual order. It’s warm, welcoming, and consistently delicious.
+                </p>
+                <h6>
+                  Moana Michell
+                </h6>
+                <p>
+                  magna aliqua
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="images/client1.jpg" alt="" class="box-img">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="detail-box">
+                <p>
+                 I came in curious and left impressed! Rahman's Fastfood has a way of turning ordinary items into something unforgettable. The spicy pasta had a real kick, and the Margherita pizza was surprisingly delicate and full of authentic flavor. You can tell they care about ingredients and presentation. A hidden gem for anyone who loves bold taste
+                </p>
+                <h6>
+                  Mike Hamell
+                </h6>
+                <p>
+                  magna aliqua
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="images/client2.jpg" alt="" class="box-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Contact Us
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              24229580-Rahman Md Mahmudur
+            </a>
+            <p>
+              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+            </p>
+            <div class="footer_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Opening Hours
+          </h4>
+          <p>
+            Everyday
+          </p>
+          <p>
+            10.00 Am -10.00 Pm
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">Student ID: 24229580-Rahman Md Mahmudur </a><br><br>
+          &copy; <span id="displayYear"></span> Distributed By
+          <a href="https://themewagon.com/" target="_blank">Rahman</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+  
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerFacts = {
+    cheese: [
+      "Cheeseburgers were invented in the 1920s!",
+      "Cheddar is the most popular cheese used in burgers."
+    ],
+    grill: [
+      "Grilling seals in the juices.",
+      "Flip your burger only once for best flavor."
+    ],
+    history: [
+      "The hamburger originated in the USA.",
+      "White Castle was the first burger chain in 1921."
+    ]
+  };
+
+  const btn = document.getElementById("burger-btn");
+  const input = document.getElementById("burger-topic");
+  const result = document.getElementById("burger-result");
+
+  if (btn && input && result) {
+    btn.addEventListener("click", function () {
+      const topic = input.value.toLowerCase().trim();
+      const facts = burgerFacts[topic];
+
+      if (facts && facts.length > 0) {
+        const randomFact = facts[Math.floor(Math.random() * facts.length)];
+        result.textContent = randomFact;
+      } else {
+        result.textContent = "Try topics like: cheese, grill, or history!";
+      }
+    });
+  }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const openBtn = document.getElementById("popup-btn");
+  const closeBtn = document.getElementById("popup-close");
+  const popupBox = document.getElementById("popup-box");
+
+  openBtn.addEventListener("click", () => {
+    popupBox.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    popupBox.style.display = "none";
+  });
+
+  // Optional: close popup when clicking outside content
+  popupBox.addEventListener("click", (e) => {
+    if (e.target === popupBox) {
+      popupBox.style.display = "none";
+    }
+  });
+});
+</script>
+
+
+</body>
+
+</html>
